@@ -1,0 +1,44 @@
+name: Daily Infrastructure Monitor
+
+on:
+  schedule:
+    # Runs at 04:00 UTC (09:00 AM Tashkent) and 15:00 UTC (20:00 PM Tashkent) every day
+    - cron: '0 4 * * *'
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+      - 'history/**'
+
+permissions:
+  contents: write
+
+jobs:
+  healthcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run Uptime Healthcheck
+        run: node scripts/monitor.js
+
+      - name: Commit and Push Status Updates
+        run: |
+          git config --local user.name "Laziz Shakarov"
+          git config --local user.email "shakarovlaziz243@gmail.com"
+          git add README.md history/summary.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(monitor): automated infrastructure healthcheck [skip ci]"
+            git push
+          else
+            echo "No status changes detected."
+          fi

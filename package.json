@@ -1,0 +1,10 @@
+{
+  "name": "uptime-monitor",
+  "version": "1.0.0",
+  "description": "GitOps-based automated infrastructure uptime and API health monitor",
+  "scripts": {
+    "monitor": "node scripts/monitor.js"
+  },
+  "author": "Laziz Shakarov <shakarovlaziz243@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Safaar Production API",
+    "url": "https://api.safaar.uz/v1/health",
+    "fallbackUrl": "https://api.safaar.uz"
+  },
+  {
+    "name": "GitHub Public API",
+    "url": "https://api.github.com"
+  },
+  {
+    "name": "Cloudflare DNS",
+    "url": "https://1.1.1.1"
+  }
+]
