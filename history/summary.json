@@ -1,5 +1,34 @@
 [
   {
+    "checkedAt": "2026-09-16 23:38:48 (UTC+5)",
+    "results": [
+      {
+        "name": "Safaar Production API",
+        "url": "https://api.safaar.uz/v1/health",
+        "status": "🟢 Operational",
+        "statusCode": 200,
+        "latency": "1853ms",
+        "ok": true
+      },
+      {
+        "name": "GitHub Public API",
+        "url": "https://api.github.com",
+        "status": "🟡 Degraded",
+        "statusCode": 403,
+        "latency": "106ms",
+        "ok": false
+      },
+      {
+        "name": "Cloudflare DNS",
+        "url": "https://1.1.1.1",
+        "status": "🟢 Operational",
+        "statusCode": 200,
+        "latency": "152ms",
+        "ok": true
+      }
+    ]
+  },
+  {
     "checkedAt": "2026-09-16 13:52:21 (UTC+5)",
     "results": [
       {
