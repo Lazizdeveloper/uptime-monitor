@@ -14,13 +14,13 @@
 
 ### 📊 Jonli Xizmatlar Holati (Live Status)
 
-> **Oxirgi tekshiruv vaqti:** `2026-10-11 15:21:18 (UTC+5)`
+> **Oxirgi tekshiruv vaqti:** `2026-10-12 00:20:18 (UTC+5)`
 
 | Servis | URL | Holati | HTTP Status | Javob tezligi |
 | :--- | :--- | :---: | :---: | :---: |
-| **Safaar Production API** | `https://api.safaar.uz/v1/health` | 🟢 Operational | `200` | `1229ms` |
-| **GitHub Public API** | `https://api.github.com` | 🟢 Operational | `200` | `86ms` |
-| **Cloudflare DNS** | `https://1.1.1.1` | 🟢 Operational | `200` | `58ms` |
+| **Safaar Production API** | `https://api.safaar.uz/v1/health` | 🟢 Operational | `200` | `1494ms` |
+| **GitHub Public API** | `https://api.github.com` | 🟢 Operational | `200` | `110ms` |
+| **Cloudflare DNS** | `https://1.1.1.1` | 🟢 Operational | `200` | `141ms` |
 
 ---
 
