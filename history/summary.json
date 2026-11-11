@@ -1,5 +1,34 @@
 [
   {
+    "checkedAt": "2026-11-11 16:29:17 (UTC+5)",
+    "results": [
+      {
+        "name": "Safaar Production API",
+        "url": "https://api.safaar.uz/v1/health",
+        "status": "🟢 Operational",
+        "statusCode": 200,
+        "latency": "769ms",
+        "ok": true
+      },
+      {
+        "name": "GitHub Public API",
+        "url": "https://api.github.com",
+        "status": "🟢 Operational",
+        "statusCode": 200,
+        "latency": "39ms",
+        "ok": true
+      },
+      {
+        "name": "Cloudflare DNS",
+        "url": "https://1.1.1.1",
+        "status": "🟢 Operational",
+        "statusCode": 200,
+        "latency": "132ms",
+        "ok": true
+      }
+    ]
+  },
+  {
     "checkedAt": "2026-11-11 02:11:42 (UTC+5)",
     "results": [
       {
@@ -1416,35 +1445,6 @@
         "status": "🟢 Operational",
         "statusCode": 200,
         "latency": "91ms",
-        "ok": true
-      }
-    ]
-  },
-  {
-    "checkedAt": "2026-10-17 13:04:40 (UTC+5)",
-    "results": [
-      {
-        "name": "Safaar Production API",
-        "url": "https://api.safaar.uz/v1/health",
-        "status": "🟢 Operational",
-        "statusCode": 200,
-        "latency": "4134ms",
-        "ok": true
-      },
-      {
-        "name": "GitHub Public API",
-        "url": "https://api.github.com",
-        "status": "🟢 Operational",
-        "statusCode": 200,
-        "latency": "126ms",
-        "ok": true
-      },
-      {
-        "name": "Cloudflare DNS",
-        "url": "https://1.1.1.1",
-        "status": "🟢 Operational",
-        "statusCode": 200,
-        "latency": "181ms",
         "ok": true
       }
     ]
